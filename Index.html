@@ -2,312 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' />
-    <link rel="stylesheet" href="style.css">
-    <title>ᴀᴘッ Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <title>ᴀᴘッ</title>
+
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+    <meta name="theme-color" content="#36d1dc" />
+
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
+
 </head>
 
 <body>
-
-    <!-- HEADER -->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo"> ᴀᴘッ </a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi, I'm</h1>
-                <h1 class="home__title home__title-name">Anshul Padiyar</h1>
-                <p>Web Developer | Photographer | UI/UX Designer</p> <br>
-                <a href="https:\\wa.me\748962**08" class="button">Contact</a>
-            </div>
-
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/anshul-padiyar-29630a202" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/anshul_padiyar/" class="home__social-icon"><i
-                        class='bx bxl-instagram-alt'></i></a>
-                <a href="https://github.com/Anshul-Padiyar" class="home__social-icon"><i class='bx bxl-github'></i></a>
-            </div>
-
-            <div class="home__img">
-                <img src="img/AP.jpg" alt="AP-Picture" style="border-radius: 50%;">
-            </div>
+    <!-- Hero Section -->
+    <div id="hero">
+        <section class="container">
+            <h1 class="hero-title">
+                Hi, my name is <span class="text-color-main name">Anshul Padiyar</span>
+                <br />
+                Web Developer
+            </h1>
+            <p class="hero-cta">
+                <a class="cta-btn cta-btn--hero" href="mailto:anshulpadiyar@hotmail.com">Get in touch</a>
+            </p>
         </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="img/AP-Profile.png" alt="">
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">I'm Anshul Padiyar</h2>
-                    <p class="about__text">
-                        Hi there!
-                        My name is AP and I'm currently a computer science student at Acropolis Institute. In my free
-                        time, I enjoy learning about web development and UI/UX design. Some of the technologies and
-                        tools I have experience with include HTML, CSS, Bootstrap, Figma, and wireframing. I'm always
-                        looking for ways to improve my skills and take on new challenges.
-                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        If you have any opportunities or projects that you think I might be interested in, please don't
-                        hesitate to get in touch via my email address: anshulpadiyar2002@gmail.com. Thanks for visiting
-                        my portfolio!
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Technical Skills</h2>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <iconify-icon icon="bxl:c-plus-plus" class="skills__icon"></iconify-icon>
-                            <span class="skills__name">C / C++</span>
-                        </div>
-                        <div class="skills__bar skills__coding">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">67%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
-                        </div>
-                        <div class="skills__bar skills__html">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">76%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS3</span>
-                        </div>
-                        <div class="skills__bar skills__css">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">53%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <iconify-icon icon="simple-icons:bootstrap" class="skills__icon"></iconify-icon>
-                            <span class="skills__name">Bootstrap</span>
-                        </div>
-                        <div class="skills__bar skills__bootstrap">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">47%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <iconify-icon icon="simple-icons:microsoftoffice" class="skills__icon"></iconify-icon>
-                            <span class="skills__name">Microsoft Office</span>
-                        </div>
-                        <div class="skills__bar skills__msOffice">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">89%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JS, NodeJS</span>
-                        </div>
-                        <div class="skills__bar skills__js">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">learning...</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h2 class="skills__subtitle">Design Skills</h2>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <iconify-icon icon="ph:figma-logo" class="skills__icon"></iconify-icon>
-                            <span class="skills__name">Figma</span>
-                        </div>
-                        <div class="skills__bar skills__figma">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">65%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <iconify-icon icon="simple-icons:adobeillustrator" class="skills__icon"></iconify-icon>
-                            <span class="skills__name">Adobe Illustrator</span>
-                        </div>
-                        <div class="skills__bar skills__AI">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">53%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <iconify-icon icon="cib:canva" class="skills__icon"></iconify-icon>
-                            <span class="skills__name">Canva</span>
-                        </div>
-                        <div class="skills__bar skills__canva">
-                        </div>
-                        <div>
-                            <span class="skills__percentage">92%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <iconify-icon icon="simple-icons:adobephotoshop" class="skills__icon"></iconify-icon>
-                            <span class="skills__name">Adobe Photoshop</span>
-                        </div>
-                        <div class="skills__bar skills__AP">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">34%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <iconify-icon icon="simple-icons:adobepremierepro" class="skills__icon"></iconify-icon>
-                            <span class="skills__name">Adobe Premiere Pro</span>
-                        </div>
-                        <div class="skills__bar skills__APP">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">40%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UI/UX</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">learning...</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enter" class="contact__button button">
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <div class="logo">
-        <img src="img/logo.gif" alt="Logo">
+        <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+            <div class="scroll-down"></div>
+        </a>
     </div>
+    <!-- /END Hero Section -->
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <h2 class="footer__title">Get in touch:</h2>
-        <p class="footer__mail">
-            <iconify-icon icon="bxl:gmail" class="mail__icon"></iconify-icon>
-            : anshulpadiyar2002@gmail.com
-        </p>
-        <div class="footer__link bg-grid">
-            <div class="footer__social">
-                <a href="#" class="footer__icon">
-                    <iconify-icon icon="logos:discord"></iconify-icon>
-                </a>
-            </div>
-            <div class="footer__social">
-                <a href="https://www.instagram.com/anshul_padiyar/" class="footer__icon">
-                    <iconify-icon icon="logos:instagram"></iconify-icon>
-                </a>
-            </div>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/anshul-padiyar-29630a202" class="footer__icon">
-                    <iconify-icon icon="logos:linkedin"></iconify-icon>
-                </a>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row about-wrapper">
+                <div class="about-wrapper__image">
+                    <img class="img-fluid" src="assets\AP-Profile.png" alt="Profile Image" width="350"/>
+                </div>
+                <div class="about-wrapper__info">
+                    <p class="about-wrapper__info-text">
+                        Passionate about web development and UI/UX design, I continuously seek to expand my knowledge
+                        and skills in the field. My experience includes working with HTML, CSS, Bootstrap, MySQL, and
+                        JavaScript, as well as UI/UX tools like Figma, focusing on wireframing, prototyping, typography.
+                        I'm always eager to take on new challenges and refine my expertise.
+                        <br /> <br />
+                        If you have any opportunities that align with my interests, feel free to reach out at <a
+                            href="mailto:anshulpadiyar@hotmail.com">anshulpadiyar@hotmail.com</a>.
+                    </p>
+                    <span class="about-wrapper__cta">
+                        <a href="https://drive.google.com/drive/folders/1Xw8GEoT6mkWl8hmXBcNitY_GR3N374rI?usp=drive_link" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
+                    </span>
+                </div>
             </div>
         </div>
-        <p class="footer__copyright">
-            Copyright
-            <iconify-icon icon="ic:sharp-copyright" class="cr__icon"></iconify-icon>
-            2023-2025 All rights reserved | Designed and Developed with
-            <iconify-icon icon="mdi:cards-heart" class="heart__icon"></iconify-icon>
-            by ᴀᴘッ
-        </p>
-    </footer>
-</body>
-<script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js">
+    </section>
+    <!-- /END About Section -->
 
-</script>
+    <!--Projects Section-->
+    <section id="projects">
+        <div class="container">
+            <div class="project-wrapper">
+                <h2 class="section-title dark-blue-text">Projects</h2>
+
+                <!-- Project 1 -->
+                <article class="row">
+                    <div class="project-wrapper__text">
+                        <h3 class="project-wrapper__text-title">Sign-Ate</h3>
+                        <p class="project-wrapper__text-info">
+                            A web-based email signature generator, using React for a user-friendly interface and
+                            customization.
+                            Ensured responsive design with ReactJS, Bootstrap.
+                        </p>
+                        <div class="project-wrapper__text-btns">
+                            <a href="https://garvbhatt.github.io/Sign-Ate/" target="_blank" rel="noopener noreferrer"
+                                class="cta-btn cta-btn--hero cta-btn--projects">See
+                                Live</a>
+                        </div>
+                    </div>
+                    <div class="project-wrapper__image">
+                        <a href="https://garvbhatt.github.io/Sign-Ate/" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail rounded">
+                                <img src="assets/Sign-Ate.gif" class="img-fluid" alt="Project Image" width="1366"
+                                    height="767" />
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <!-- /END Project -->
+
+                <!-- Project 2 -->
+                <article class="row">
+                    <div class="project-wrapper__text">
+                        <h3 class="project-wrapper__text-title">Suspicious Information Gathering Identifier (SIGI)</h3>
+                        <p class="project-wrapper__text-info">
+                            SIGI is a tool that identifies malicious activity in URLs, identifies phone numbers, and
+                            gathers information from IP addresses.
+                        </p>
+                        <div class="project-wrapper__text-btns">
+                            <a href="https://github.com/Anshul-Padiyar/SIGI" target="_blank" rel="noopener noreferrer"
+                                class="cta-btn cta-btn--hero cta-btn--projects">See
+                                Live</a>
+                        </div>
+                    </div>
+                    <div class="project-wrapper__image">
+                        <a href="https://github.com/Anshul-Padiyar/SIGI" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail rounded">
+                                <img src="assets\SIGI.jpg" class="img-fluid" alt="Project Image" width="1366"
+                                    height="767" />
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <!-- /END Project -->
+
+                <!-- Project 3 -->
+                <article class="row">
+                    <div class="project-wrapper__text">
+                        <h3 class="project-wrapper__text-title">Con-Wiser</h3>
+                        <p class="project-wrapper__text-info">
+                            Con wiser is a website that simplifies public calculations, offering calculators for length,
+                            weight, and temperature conversions.
+                        </p>
+                        <div class="project-wrapper__text-btns">
+                            <a href="https://anshul-padiyar.github.io/con-wiser/" target="_blank" rel="noopener noreferrer"
+                                class="cta-btn cta-btn--hero cta-btn--projects">See
+                                Live</a>
+                        </div>
+                    </div>
+                    <div class="project-wrapper__image">
+                        <a href="https://anshul-padiyar.github.io/con-wiser/" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail rounded">
+                                <img src="assets/con-wiser.gif" class="img-fluid" alt="Project Image" width="1366"
+                                    height="767" />
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <!-- /END Project -->
+
+                <!-- Project 4 -->
+                <article class="row">
+                    <div class="project-wrapper__text">
+                        <h3 class="project-wrapper__text-title">SuperHeroToys.ap</h3>
+                        <p class="project-wrapper__text-info">
+                            It's superhero toys shop's landing page.
+                        </p>
+                        <div class="project-wrapper__text-btns">
+                            <a href="https://anshul-padiyar.github.io/SuperHeroToys.ap/" target="_blank" rel="noopener noreferrer"
+                                class="cta-btn cta-btn--hero cta-btn--projects">See
+                                Live</a>
+                        </div>
+                    </div>
+                    <div class="project-wrapper__image">
+                        <a href="https://anshul-padiyar.github.io/SuperHeroToys.ap/" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail rounded">
+                                <img src="assets\SuperHeroToys.ap.gif" class="img-fluid" alt="Project Image" width="1366"
+                                    height="767" />
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <!-- /END Project -->
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#hero" class="back-to-top" aria-label="go back to top">
+                <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+            </a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/anshulpadiyar" target="_blank" rel="noopener noreferrer"
+                    aria-label="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Anshul-Padiyar" target="_blank" rel="noopener noreferrer"
+                    aria-label="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <hr />
+            <p class="footer__text">
+                Designed and developed with 🤍. This site is maintained by <a href="https://github.com/Anshul-Padiyar"
+                    target="_blank"><u>Anshul Padiyar</u></a>.
+            </p>
+        </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+        document.getElementById("year").textContent = new Da().gear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+</body>
 
 </html>
